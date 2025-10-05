@@ -1,0 +1,10 @@
+<div>
+  Welcome
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" [attr.id]="formGroupNameId">
+    <ng-container *ngFor="let el of elements">
+      <pre>{{ el.name }}</pre>
+    </ng-container>
+    <button type="submit">Submit</button>
+  </form>
+  EXIT
+</div>
