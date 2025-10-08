@@ -1,21 +1,51 @@
 [
   {
+    "id":1,
     "type": "text",
     "name": "username",
     "label": "Username",
     "placeholder": "Enter your username",
     "options": [],
-    "required": true
+    "required": true,
+    "isFirstElement":true,
+    "nextElement":2
+
   },
   {
+    "id":2,
     "type": "text",
     "name": "firstname",
     "label": "First Name",
     "placeholder": "Enter your username",
     "options": [],
-    "required": true
+    "required": true,
+    "isFirstElement":false,
+    "nextElement":3
   },
   {
+    "id":3,
+    "type": "text",
+    "name": "lastname",
+    "label": "Last Name",
+    "placeholder": "Enter your username",
+    "options": [],
+    "required": true,
+    "isFirstElement":false,
+    "nextElement":4
+  },
+  {
+    "id":4,
+    "type": "text",
+    "name": "address",
+    "label": "Address",
+    "placeholder": "Enter your username",
+    "options": [],
+    "required": true,
+    "isFirstElement":false,
+    "nextElement":5
+  },
+  {
+    "id":5,
     "type": "select",
     "name": "gender",
     "label": "Gender",
@@ -25,6 +55,7 @@
       { "label": "Female", "value": "female", "selected": false },
       { "label": "Other", "value": "other", "selected": false }
     ],
-    "required": true
+    "required": true,
+    "isFirstElement":false
   }
 ]

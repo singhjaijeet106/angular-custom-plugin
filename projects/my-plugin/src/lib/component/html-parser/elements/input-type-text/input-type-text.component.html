@@ -1,1 +1,8 @@
-<p>input-type-text works!</p>
+<!-- <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"> -->
+
+
+<div class="mb-3 row">
+    <label [for]="name" class="form-label">{{label}}</label>
+    <input type="text" [id]="name" class="form-control" [formControl]="control" [placeholder]="placeholder">
+</div>

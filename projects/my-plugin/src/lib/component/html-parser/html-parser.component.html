@@ -1,10 +1,18 @@
-<div>
-  Welcome
+<div class="container p-3">
   <form [formGroup]="form" (ngSubmit)="onSubmit()" [attr.id]="formGroupNameId">
-    <ng-container *ngFor="let el of elements">
-      <pre>{{ el.name }}</pre>
-    </ng-container>
-    <button type="submit">Submit</button>
+    <div class="row" *ngFor="let row of rows; trackBy: trackByFn">
+      <div class="col-md-3" *ngFor="let el of row; trackBy: trackByFn">
+        <div class="p-3">
+          <lib-input-type-text
+            *ngIf="el.type === 'text' || el.type === 'password' || el.type === 'tel'"
+            [label]="el.label"
+            [placeholder]="el.placeholder"
+            [type]="el.type"
+            [name]="el.name"
+            [control]="getControl(el.name)">
+          </lib-input-type-text>
+        </div>
+      </div>
+    </div>
   </form>
-  EXIT
 </div>

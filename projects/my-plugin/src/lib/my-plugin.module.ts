@@ -5,13 +5,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { InputTypeTextComponent } from './component/html-parser/elements/input-type-text/input-type-text.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { InputSelectComponent } from './component/html-parser/elements/input-select/input-select.component';
 
 
 @NgModule({
   declarations: [
     MyPluginComponent,
     HtmlParserComponent,
-    InputTypeTextComponent
+    InputTypeTextComponent,
+    InputSelectComponent
   ],
   imports: [
     HttpClientModule,
